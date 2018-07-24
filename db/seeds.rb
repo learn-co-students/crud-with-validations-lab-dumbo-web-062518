@@ -1,0 +1,1 @@
+Song.destroy_all
