@@ -1,4 +1,7 @@
-<!-- <h1><%= @song.title %></h1>
+
+
+
+<h1><%= @song.title %></h1>
 <ul>
 <li><%= @song.released %></li>
 <li><%= @song.release_year %></li>
@@ -6,23 +9,4 @@
 <li><%= @song.artist_name %></li>
 </ul>
 
-<p><%= link_to "Edit Song", edit_song_path(@song) %></p> -->
-
-<h2><%= @song.title %></h2>
-by <strong><%= @song.artist_name %></strong>
-<% if @song.released? %>
-  <p>
-    Released in
-    <strong><%= @song.release_year %></strong>
-  </p>
-<% end %>
-
-<p>
-  <strong>Genre:</strong>
-  <%= @song.genre %>
-</p>
-
-<%= link_to 'Edit', edit_song_path(@song) %> |
-
-
-<%= button_to 'Delete', @song, method: :delete, data: { confirm: 'Are you sure?' } %>
+<p><%= link_to "Edit Song", edit_song_path(@song) %></p>
