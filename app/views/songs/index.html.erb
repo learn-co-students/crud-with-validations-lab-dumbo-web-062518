@@ -1,0 +1,9 @@
+<h1>Songs</h1>
+<tbody>
+<% @songs.each do |s| %>
+<tr><%= link_to("#{s.title} by #{s.artist_name}", song_path(s)) %><br>
+  Released: <%= s.release_year %><br>
+  Genre: <%= s.genre %></tr><br>
+  <br>
+<% end %>
+</tbody>
